@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "Space Grotesk", monospace;
+
+  --color-ink: #E5E5E5;
+  --color-horizon: #FF8A5C;
+
+  --color-sea-50: #050505;
+  --color-sea-100: #0A0A0A;
+  --color-sea-200: #141414;
+  --color-sea-300: #222222;
+  --color-sea-400: #333333;
+  --color-sea-500: #666666;
+  --color-sea-600: #999999;
+  --color-sea-700: #CCCCCC;
+  --color-sea-800: #E5E5E5;
+  --color-sea-900: #FFFFFF;
+}
+
+@layer utilities {
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  }
+
+  .glass-dark {
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-orange {
+    background: rgba(255, 138, 92, 0.08);
+    border: 1px solid rgba(255, 138, 92, 0.25);
+  }
+}
+
+@keyframes orbit {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-orbit {
+  animation: orbit 3s linear infinite;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
