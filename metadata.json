@@ -1,0 +1,6 @@
+{
+  "name": "Wayfare - AI Trip Planner",
+  "description": "AI-powered trip planner for personalized, budget-friendly travel destinations and itineraries integrated with Google Places API.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
